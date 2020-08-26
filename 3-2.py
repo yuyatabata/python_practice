@@ -22,3 +22,12 @@ print(result)
 
 # リスト内包表記と三項演算子
 l = ['even' if i % 2 else i for i in range(10)]
+print(l)
+
+get_odd_even = lambda x: 'even' if x % 2 == 0 else 'odd'
+print(get_odd_even(1))
+
+# enumerate count
+chars = 'words'
+for count, char in enumerate(chars):
+    print(f'index:{count},text:{char}')
